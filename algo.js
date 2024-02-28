@@ -1,20 +1,20 @@
 let euler = 0;
 
-function fatorial(numero){
-    let resultado = 1;
-    if(numero === 0 || numero === 1){
+function factorial(number){
+    let result = 1;
+    if(number === 0 || number === 1){
         return 1
     }else{
-    for (let i = 2; i <= numero; i++) {
-        resultado *= i;
+    for (let i = 2; i <= number; i++) {
+        result *= i;
         }
-    return resultado;
+    return result;
     }
 }
 
 for(let n = 0; n < 10; n++){
-    let paramInicial = 1/(fatorial(n));
-    euler += paramInicial
+    let formula = 1/(factorial(n));
+    euler += formula;
 }
 
 console.log(euler);
